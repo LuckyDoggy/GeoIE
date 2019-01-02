@@ -10,7 +10,7 @@ class GeoIE(nn.Module):
         self.scaling=10
         self.negnum=neg_num
         self.a=0.1
-        self.b=2
+        self.b=-2
         self.UserPreference=nn.Embedding(user_count,emb_dimension,sparse=True)
         self.PoiPreference=nn.Embedding(POI_count,emb_dimension,sparse=True)
         self.GeoInfluence=nn.Embedding(POI_count,emb_dimension,sparse=True)
