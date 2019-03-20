@@ -77,6 +77,7 @@ for epoch in range(5):
         total_loss += loss.item()
         loss.backward()
         optimizer.step()
+        print(loss)
 print("训练完成")
 filename='./model/GeoIEmodel(canshu)'+str(emb_dimension)+'.pkl'
 torch.save(net.state_dict(), filename)
